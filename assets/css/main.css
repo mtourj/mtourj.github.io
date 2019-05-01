@@ -765,13 +765,28 @@ input[type="radio"] + label:before {
   display: block;
   margin: 2.5rem 0;
   width: 49%;
-  height: 12rem;
+  height: 13.5rem;
   position: relative;
 }
 
 .image.main img,
 .image.side img {
   width: 100%;
+}
+
+.image.side .actions {
+	display: flex;
+	flex-direction: column;
+}
+
+.image.side .actions li {
+	vertical-align: unset;
+	width: 100%;
+}
+
+.image.side .actions li a {
+	width: 100%;
+	margin-top: 2px;
 }
 
 .image.main img {
