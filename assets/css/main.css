@@ -1540,6 +1540,10 @@ body.is-preload #header .content .inner {
   margin-left: 1.5rem;
 }
 
+#work section h3 {
+	margin-left: 1.5rem;
+}
+
 #work section span {
   display: flex;
   flex-direction: column;
