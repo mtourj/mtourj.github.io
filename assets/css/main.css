@@ -692,10 +692,14 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			height: 12rem;
+			overflow: hidden;
+			position: relative;
 		}
 
 			.image.main img {
 				width: 100%;
+				margin-top: -16%;
 			}
 
 		@media screen and (max-width: 736px) {
