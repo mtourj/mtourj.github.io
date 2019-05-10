@@ -5,7 +5,7 @@ As of today (5/9/2019), this means this website is meant to be proof of my skill
 
 ### This portfolio will showcase projects built with:
 
-* * Checked items in the list below indicate completion
+*Checked items in the list below indicate completion:*
 
 - [ ] Unity3D
 - [ ] C#
@@ -15,6 +15,6 @@ As of today (5/9/2019), this means this website is meant to be proof of my skill
 
 ### Backlog
 
-* * Checked items in the list below indicate completion
+*Checked items in the list below indicate completion:*
 
 - [ ] Re-write website with React
