@@ -1,6 +1,10 @@
-# Purpose
+# Mohammad Tourjoman - Portfolio
 
-This is my portfolio website, built specifically for the purpose of proving knowledge of Web Development.
+Welcome to my portfolio website's repo! You can access the website at [mohammadtourj.me](http://mohammadtourj.me/). This site is hosted using [GitHub Pages](https://pages.github.com/)
+
+## Purpose
+
+This portfolio was built for the purpose of proving knowledge of Web Development to future employers.
 As of today (5/9/2019), this means this website is meant to be proof of my skills in HTML, CSS, JavaScript and more.
 
 ### This portfolio will showcase projects built with:
