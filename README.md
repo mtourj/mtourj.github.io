@@ -11,14 +11,13 @@ As of today (5/9/2019), this means this website is meant to be proof of my skill
 
 *Checked items in the list below indicate completion:*
 
-- [ ] Unity3D
-- [ ] C#
-- [ ] Swift
+- [ ] Unity3D and C#
+- [ ] Swift (iOS/macOS apps)
 - [ ] JavaScript / LESS(CSS) / HTML
-- [ ] Unreal Engine
 
 ### Backlog
 
 *Checked items in the list below indicate completion:*
 
 - [ ] Re-write website with React
+- [ ] Showcase a project made with Unreal Engine

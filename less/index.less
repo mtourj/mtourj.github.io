@@ -1,0 +1,44 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+
+body {
+  background-image: @bgImage;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: gray;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.5rem 0;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 500px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .title,
+  nav,
+  .socials {
+    font-family: @defaultFont;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
