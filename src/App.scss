@@ -76,6 +76,10 @@
       }
     }
 
+    .container-left {
+      padding-bottom: 72px;
+    }
+
     .container-right {
       height: auto;
       padding-bottom: 48px;
@@ -89,6 +93,7 @@
       bottom: 12px;
       margin: auto;
       left: 50%;
+      margin-left: -13px;
     }
 
     @media (max-width: 340px) {

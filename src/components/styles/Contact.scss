@@ -35,7 +35,6 @@ form {
   button {
     margin: 8px 0;
     padding: 8px;
-    margin-right: 16px;
     background: none;
     border: 1px solid white;
     border-radius: 4px;
@@ -43,6 +42,8 @@ form {
     font-weight: bolder;
     cursor: pointer;
     outline: none;
+    width: 90%;
+    max-width: 240px;
 
     box-shadow: none;
 
