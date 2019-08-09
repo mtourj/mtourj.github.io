@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+
 const Contact = () => {
 
-  
+  console.log(process.env);
 
   const [form, setForm] = useState({
     name: '',

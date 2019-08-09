@@ -90,6 +90,10 @@
   }
 
   @media (max-width: 760px) {
+    .thumb {
+      width: 30%;
+    }
+
     .right {
       flex-direction: column;
 
