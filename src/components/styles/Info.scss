@@ -1,0 +1,77 @@
+.info {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    margin-bottom: 16px;
+
+    button {
+      flex-grow: 100;
+      background: none;
+      border: 1px solid white;
+      color: rgb(200, 200, 200);
+      padding: 12px 32px;
+      margin-bottom: 0;
+
+      outline: none;
+      font-weight: lighter;
+      letter-spacing: 3px;
+
+      transition: border-bottom 0.2s, padding 0.2s, color 0.2s;
+    }
+
+    @media (max-width: 586px) {
+      button {
+        padding: 12px 12px;
+      }
+    }
+
+    button:hover {
+      color: rgb(240, 240, 240);
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+    }
+
+    button:first-child {
+      border-radius: 8px 0px 0px 0px;
+    }
+
+    button:last-child {
+      border-radius: 0 8px 0 0;
+    }
+
+    button.selected {
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0);
+    }
+  }
+
+  .tab {
+    display: flex;
+    align-items: center;
+    min-height: 240px;
+    text-align: left;
+    line-height: 1.6;
+    padding: 16px;
+    border: 1px dashed white;
+    border-top: none;
+    margin-bottom: 24px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 0;
+    
+    transition: height 0.2s;
+
+    @media(max-width: 1640px) {
+      height: auto;
+    }
+
+    .resume-link {
+      margin-left: 8px;
+    }
+  }
+}

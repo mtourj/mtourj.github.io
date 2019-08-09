@@ -1,0 +1,73 @@
+.App {
+  display: flex;
+  width: 100%;
+  color: white;
+  font-family: 'Consolas', sans-serif;
+  user-select: none;
+  text-align: center;
+
+  .head {
+    margin-top: 48px;
+    font-size: 48px;
+    padding: 16px;
+  }
+
+  .container-left {
+    background: black;
+    width: 50%;
+    height: 100vh;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    .subhead {
+      color: lightgray;
+      margin-top: 0;
+    }
+  }
+  
+  .container-right {
+    background: #333333;
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    overflow-y: scroll;
+    
+  }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .horizontal-line {
+    color: white;
+    width: 90%;
+  }
+
+  @media (max-width: 1172px) {
+    flex-direction: column;
+
+    .container-left, .container-right {
+      width: 100%;
+      overflow-y: hidden;
+    }
+
+    .arrow-down {
+      display: block;
+      color: white;
+      position: absolute;
+      font-size: 48px;
+      bottom: 12px;
+      margin: auto;
+      left: 50%;
+    }
+  }
+
+}
