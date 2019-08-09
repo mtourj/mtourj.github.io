@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   color: white;
-  font-family: 'Consolas', sans-serif;
+  font-family: "Consolas", sans-serif;
   user-select: none;
   text-align: center;
 
@@ -16,18 +16,18 @@
     background: black;
     width: 50%;
     height: 100vh;
- 
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
+
     .subhead {
       color: lightgray;
       margin-top: 0;
     }
   }
-  
+
   .container-right {
     background: #333333;
     width: 50%;
@@ -39,7 +39,6 @@
     flex-direction: column;
 
     overflow-y: scroll;
-    
   }
 
   .arrow-down {
@@ -54,9 +53,32 @@
   @media (max-width: 1172px) {
     flex-direction: column;
 
-    .container-left, .container-right {
+    .container-left,
+    .container-right {
       width: 100%;
       overflow-y: hidden;
+
+      .head {
+        font-size: 32px;
+        margin: 0;
+      }
+
+      h1.subhead {
+        font-size: 24px;
+      }
+
+      h4.subhead {
+        font-size: 16px;
+      }
+
+      hr {
+        display: none;
+      }
+    }
+
+    .container-right {
+      height: auto;
+      padding-bottom: 48px;
     }
 
     .arrow-down {
@@ -68,6 +90,25 @@
       margin: auto;
       left: 50%;
     }
+
+    @media (max-width: 340px) {
+      .arrow-down {
+        display: none;
+      }
+    }
   }
 
+  @media (max-width: 350px) {
+    .head {
+      font-size: 26px!important;
+    }
+
+    h1.subhead {
+      font-size: 24px;
+    }
+
+    h4.subhead {
+      font-size: 16px;
+    }
+  }
 }

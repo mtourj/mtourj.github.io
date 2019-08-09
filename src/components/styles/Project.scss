@@ -34,6 +34,15 @@
       height: 80%;
       padding-right: 24px;
 
+      .warn {
+        padding: 6px;
+        background: rgba(220, 20, 60, 0.56);
+        border-radius: 6px;
+        width: auto;
+        margin-left: 8px;
+        font-size: 14px;
+      }
+
       h3 {
         margin: 0;
       }
@@ -90,21 +99,28 @@
   }
 
   @media (max-width: 760px) {
+    flex-direction: column;
+
     .thumb {
-      width: 30%;
+      width: 95%;
     }
 
     .right {
       flex-direction: column;
+      width: 90%;
+      .content {
+        width: 100%;
+
+
+      }
 
       .cta {
         flex-direction: row;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
         
         button {
-          margin: 0;
-          margin-right: 32px;
+          margin: 0 6px;
           width: 50%;
         }
       }

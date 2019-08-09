@@ -27,8 +27,16 @@
     }
 
     @media (max-width: 586px) {
+      flex-flow: row wrap;
+
       button {
-        padding: 12px 12px;
+        padding: 10px;
+      }
+    }
+
+    @media(max-width: 350px) {
+      button {
+        padding: 4px;
       }
     }
 
@@ -54,7 +62,7 @@
   .tab {
     display: flex;
     align-items: center;
-    min-height: 240px;
+    min-height: 180px;
     text-align: left;
     line-height: 1.6;
     padding: 16px;
@@ -68,6 +76,10 @@
 
     @media(max-width: 1640px) {
       height: auto;
+    }
+
+    @media(max-width: 420px) {
+      font-size: 12px;
     }
 
     .resume-link {

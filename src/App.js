@@ -24,7 +24,8 @@ function App() {
       demo: 'https://devmap.netlify.com/',
       image: devmap,
       description: 'An early work-in-progress software engineering tool used to make visual blueprints of apps before them get built.',
-      tech: 'React/Redux, NodeJS/Express'
+      tech: 'React/Redux, NodeJS/Express',
+      early: true
     },
   ]
 
