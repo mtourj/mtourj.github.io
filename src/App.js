@@ -36,6 +36,7 @@ function App() {
         <h1 className='head'>MOHAMMAD TOURJOMAN</h1>
         <h1 className='subhead'>Software Developer</h1>
         <h4 className='subhead'>Eastvale, California</h4>
+        <h4 className='subhead'>React/Redux, NodeJS/Express, Java/Spring</h4>
         <Info />
         <hr className='horizontal-line' />
       </div>
