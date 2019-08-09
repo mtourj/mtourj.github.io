@@ -1,0 +1,113 @@
+.project {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+
+  margin: 16px 0;
+  padding: 8px 0;
+
+  transition: background-color 0.5s;
+  transition-delay: 0.1s;
+
+  .thumb {
+    width: 20%;
+    padding: 8px;
+    margin: 0 16px;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      border-radius: 2px;
+      box-shadow: 0 0 16px -1px black;
+    }
+  }
+  .right {
+    display: flex;
+    width: 80%;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      width: 80%;
+      height: 80%;
+      padding-right: 24px;
+
+      h3 {
+        margin: 0;
+      }
+
+      h5 {
+        margin: 6px 0;
+        color: lightslategray;
+      }
+
+      p {
+        margin-top: 8px;
+      }
+    }
+
+    .cta {
+      width: 20%;
+      height: 80%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      button {
+        margin: 8px 0;
+        padding: 8px;
+        margin-right: 16px;
+        background: none;
+        border: 1px solid white;
+        border-radius: 4px;
+        color: white;
+        font-weight: bolder;
+        cursor: pointer;
+        outline: none;
+
+        box-shadow: none;
+
+        transition: background 0.25s, box-shadow 0.2s;
+
+        .glyphicon {
+          color: lightgray;
+        }
+      }
+
+      button:hover {
+        background: white;
+        color: black;
+        box-shadow: 0 0 16px -2px black;
+
+        .glyphicon {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 760px) {
+    .right {
+      flex-direction: column;
+
+      .cta {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        
+        button {
+          margin: 0;
+          margin-right: 32px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.project:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
