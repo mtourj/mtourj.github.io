@@ -6,6 +6,9 @@ README.md
 /.pnp
 .pnp.js
 
+# environment variables
+*.env
+
 # testing
 /coverage
 
