@@ -5,18 +5,28 @@ import Info from './components/Info';
 
 import conjugator from './img/conjugator.png';
 import devmap from './img/devmap.png';
+import designhub from './img/designhub.png';
+
 
 import './App.scss';
 
 function App() {
   const projects = [
     {
+      name: 'DesignHub X',
+      code: 'https://github.com/Lambda-School-Labs/designhub-fe',
+      demo: 'https://www.designhubx.com/',
+      image: designhub,
+      description: 'DesignHub is a collaborative and intuitive platform for artists and designers to share and manage their work. ',
+      tech: 'React/Redux, NodeJS/Express, PostgreSQL'
+    },
+    {
       name: 'Conjugator',
       code: 'https://github.com/ls-bw-06212019-conjugator/conjugator-FE',
       demo: 'https://bw-conjugator.netlify.com/',
       image: conjugator,
       description: 'Conjugator is an education, drill-practice style app that helps users practice Spanish conjugations through repitition and visual/statistical feedback.',
-      tech: 'React/Redux, NodeJS/Express'
+      tech: 'React/Redux, NodeJS/Express, PostgreSQL'
     },
     {
       name: 'Devmap',
@@ -24,7 +34,7 @@ function App() {
       demo: 'https://devmap.netlify.com/',
       image: devmap,
       description: 'An early work-in-progress software engineering tool used to make visual blueprints of apps before they get built.',
-      tech: 'React/Redux, NodeJS/Express',
+      tech: 'React/Redux, NodeJS/Express, MongoDB',
       early: true
     },
   ]
