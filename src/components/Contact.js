@@ -36,10 +36,6 @@ const Contact = () => {
     const company = form.company.trim();
     const message = form.message.trim();
 
-    setState({
-      ...state,
-      sending: true
-    })
     setError('');
 
     if(!name){
@@ -51,6 +47,11 @@ const Contact = () => {
     } else if(!message){
       setError("Message may not be empty.");
     }
+
+    setState({
+      ...state,
+      sending: true
+    })
 
     axios.post('https://mohammadtourj-portfolio.herokuapp.com/send', {
       name,
