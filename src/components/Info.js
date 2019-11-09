@@ -61,7 +61,7 @@ const Info = () => {
             className="resume-link"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://docs.google.com/document/d/1YeteNcPehFGOMPEMr4iUdVCbJYckRqiiSYX4IbMV3Pw/edit?usp=sharing"
+            href="https://resume.creddle.io/resume/j5dsdq10hnm"
           >
             {" "}
             this link! <span className="glyphicon glyphicon-new-window" />
