@@ -51,7 +51,7 @@ const Info = () => {
           Engineering Academy that provides an immersive hands-on curriculum
           with a focus on computer science, web and mobile development, UX
           design, and data science. I strongly believe in their mission and I am
-          constatly thankful to have them by my side, and to be involved.
+          constantly thankful to have them by my side, and to be involved.
         </div>
       )}
       {tab === 2 && (
