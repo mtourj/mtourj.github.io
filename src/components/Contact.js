@@ -46,6 +46,7 @@ const Contact = () => {
       return;
     } else if(!message){
       setError("Message may not be empty.");
+      return;
     }
 
     setState({
