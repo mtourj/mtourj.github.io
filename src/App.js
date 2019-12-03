@@ -26,16 +26,8 @@ function App() {
       demo: 'https://bw-conjugator.netlify.com/',
       image: conjugator,
       description: 'Conjugator is an education, drill-practice style app that helps users practice Spanish conjugations through repitition and visual/statistical feedback.',
-      tech: 'React/Redux, NodeJS/Express, PostgreSQL'
-    },
-    {
-      name: 'Devmap',
-      code: 'https://github.com/mtourj/Devmap',
-      demo: 'https://devmap.netlify.com/',
-      image: devmap,
-      description: 'An early work-in-progress software engineering tool used to make visual blueprints of apps before they get built.',
-      tech: 'React/Redux, NodeJS/Express, MongoDB',
-      early: true
+      tech: 'React/Redux, NodeJS/Express, PostgreSQL',
+      early: false
     },
   ]
 
