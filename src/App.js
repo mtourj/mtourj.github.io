@@ -21,15 +21,6 @@ function App() {
 
   const projects = [
     {
-      name: "Scribe",
-      code: "https://github.com/Breath-Taken/",
-      demo: "https://notaking-with-scribe.netlify.com/",
-      image: scribe,
-      early: true,
-      description:
-        "Scribe is a digital note-taker. It allows a user to record transcripts by listening to their speech/meeting/conversation and storing it into their personal repository of transcripts"
-    },
-    {
       name: "DesignHub X",
       code: "https://github.com/Lambda-School-Labs/designhub-fe",
       demo: "https://www.designhubx.com/",
@@ -47,7 +38,16 @@ function App() {
         "Conjugator is an educational, drill-practice style app that helps users practice Spanish conjugations through repitition and visual/statistical feedback.",
       tech: "React/Redux, NodeJS/Express, PostgreSQL",
       early: false
-    }
+    },
+    {
+      name: "Scribe",
+      code: "https://github.com/Breath-Taken/",
+      demo: "https://notaking-with-scribe.netlify.com/",
+      image: scribe,
+      early: true,
+      description:
+        "Scribe is a digital note-taker. It allows a user to record transcripts by listening to their speech/meeting/conversation and storing it into their personal repository of transcripts"
+    },
   ];
 
   return (
