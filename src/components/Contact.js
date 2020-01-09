@@ -87,7 +87,7 @@ const Contact = () => {
   }
 
   return (
-    <form className='tab'>
+    <form>
       <div className='form-field'>
         <label>Name <span className='required'>*</span></label>
         <input disabled={state.sending} type='text' name='name' value={form.name} onChange={handleChange} />

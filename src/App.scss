@@ -5,6 +5,7 @@
   font-family: "Consolas", sans-serif;
   user-select: none;
   text-align: center;
+  min-height: 798px;
 
   .head {
     margin-top: 48px;
@@ -15,16 +16,26 @@
   .container-left {
     background: black;
     width: 50%;
+    min-height: 798px;
     height: 100vh;
+    
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    .links {
+      display: flex;
+    }
 
     .subhead {
       color: lightgray;
       margin-top: 0;
+    }
+
+    .arrow-down {
+      display: none;
     }
   }
 
@@ -32,6 +43,7 @@
     background: #333333;
     width: 50%;
     height: 100vh;
+    min-height: 798px;
 
     display: flex;
     justify-content: flex-start;
@@ -41,10 +53,6 @@
     overflow-y: scroll;
   }
 
-  .arrow-down {
-    display: none;
-  }
-
   .horizontal-line {
     color: white;
     width: 90%;
@@ -52,15 +60,16 @@
 
   @media (max-width: 1300px) {
     flex-direction: column;
+    min-height: none;
 
     .container-left,
     .container-right {
+      min-height: 0;
       width: 100%;
       overflow-y: hidden;
 
       .head {
         font-size: 32px;
-        margin: 0;
       }
 
       h1.subhead {
@@ -78,22 +87,25 @@
 
     .container-left {
       // padding-bottom: 144px;
+
+      .arrow-down {
+        display: flex;
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        // color: white;
+        // position: absolute;
+        // font-size: 48px;
+        // bottom: 12px;
+        // margin: auto;
+        // left: 50%;
+        // margin-left: -13px;
+      }
     }
 
     .container-right {
       height: auto;
       padding-bottom: 48px;
-    }
-
-    .arrow-down {
-      display: block;
-      color: white;
-      position: absolute;
-      font-size: 48px;
-      bottom: 12px;
-      margin: auto;
-      left: 50%;
-      margin-left: -13px;
     }
 
     @media (max-width: 360px) {
@@ -105,7 +117,7 @@
 
   @media (max-width: 350px) {
     .head {
-      font-size: 26px!important;
+      font-size: 26px !important;
     }
 
     h1.subhead {

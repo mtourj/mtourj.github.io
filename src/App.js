@@ -3,13 +3,22 @@ import React from "react";
 import Project from "./components/Project";
 import Info from "./components/Info";
 
+import SocialButton from './components/SocialButton';
+
 import conjugator from "./img/conjugator.png";
 import scribe from "./img/scribe.png";
 import designhub from "./img/designhub.png";
 
+// Icon imports
+import github from './img/icons/github.png';
+import githubLight from "./img/icons/github-light.png";
+import linkedin from './img/icons/linkedin.png';
+import linkedinLight from './img/icons/linkedin-light.png';
+
 import "./App.scss";
 
 function App() {
+
   const projects = [
     {
       name: "Scribe",
@@ -45,14 +54,22 @@ function App() {
     <div className="App">
       <div className="container-left">
         <hr className="horizontal-line" />
+
         <h1 className="head">MOHAMMAD TOURJOMAN</h1>
-        <h1 className="subhead">Software Developer</h1>
-        <h4 className="subhead">Eastvale, California</h4>
-        <h4 className="subhead">
-          React/Redux, NodeJS/Express, SQLite/PostgreSQL/MongoDB
-        </h4>
+        <div className='links'>
+          <SocialButton to='https://github.com/mtourj' default={githubLight} hover={github} />
+          <SocialButton to='https://www.linkedin.com/in/mohammad-tourjoman-6b811259/' default={linkedinLight} hover={linkedin} />
+        </div>
+        <div className="subheads">
+          <h1 className="subhead">Software Developer</h1>
+          <h4 className="subhead">Eastvale, California</h4>
+          <h4 className="subhead">
+            React/Redux, NodeJS/Express, SQLite/PostgreSQL/MongoDB
+          </h4>
+        </div>
         <Info />
         <hr className="horizontal-line" />
+        <div className="arrow-down">&#8595;</div>
       </div>
       <div className="container-right">
         <h1 className="head">MOST RECENT PROJECTS</h1>
@@ -61,7 +78,6 @@ function App() {
         ))}
         More to come...
       </div>
-      <div className="arrow-down">&#8595;</div>
     </div>
   );
 }
