@@ -47,7 +47,7 @@ const Info = () => {
       {tab === 1 && (
         <div className="tab">
           I am currently enrolled in Lambda School (expected end date in March
-          2020). Lambda School is a 6+ month Computer Science & Software
+          2020). Lambda School is a 6+ month Computer Science and Software
           Engineering Academy that provides an immersive hands-on curriculum
           with a focus on computer science, web and mobile development, UX
           design, and data science. I strongly believe in their mission and I am

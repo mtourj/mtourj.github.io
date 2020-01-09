@@ -25,7 +25,7 @@ function App() {
       code: 'https://github.com/ls-bw-06212019-conjugator/conjugator-FE',
       demo: 'https://bw-conjugator.netlify.com/',
       image: conjugator,
-      description: 'Conjugator is an education, drill-practice style app that helps users practice Spanish conjugations through repitition and visual/statistical feedback.',
+      description: 'Conjugator is an educational, drill-practice style app that helps users practice Spanish conjugations through repitition and visual/statistical feedback.',
       tech: 'React/Redux, NodeJS/Express, PostgreSQL',
       early: false
     },

@@ -24,7 +24,8 @@ const Contact = () => {
   const setError = error => {
     setForm({
       ...form,
-      error
+      error,
+      sendSuccess: error ? '' : state.sendSuccess
     })
   }
 
@@ -54,7 +55,7 @@ const Contact = () => {
       sending: true
     })
 
-    axios.post('https://mohammadtourj-portfolio.herokuapp.com/send', {
+    axios.post(process.env.REACT_APP_SEND_MAIL, {
       name,
       email,
       company,
