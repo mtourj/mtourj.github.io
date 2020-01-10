@@ -42,7 +42,7 @@ function App() {
     {
       name: "Scribe",
       code: "https://github.com/scribe-notes",
-      demo: "https://notaking-with-scribe.netlify.com/",
+      demo: "https://scribe-notes.netlify.com/",
       image: scribe,
       early: true,
       description:
