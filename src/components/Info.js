@@ -8,17 +8,19 @@ const Info = () => {
   const [tab, setTab] = useState(0);
 
   const contents = [
-    `I have been writing code since the age of 12, and I have had a passion
-          for it since. I started with Java, moved on to game development with
-          C# as a hobby, and fast-forward today, I am attending Lambda school to
-          specialize in full stack web development, and I look forward to and am
-          excited about starting a career as a software developer.`,
+    `Before I became the full stack developer I am today, I began learning
+            in Java about 8 years ago as a hobby, and eventually moved on
+            to game development with Unity and C#. I learned a lot and made
+            a lot, and I have now been a student at lambda school for 8 months
+            building web apps as a full stack web developer in a professional
+            capacity.`,
     `I am currently enrolled in Lambda School (expected end date in March
             2020). Lambda School is a 6+ month Computer Science and Software
             Engineering Academy that provides an immersive hands-on curriculum
             with a focus on computer science, web and mobile development, UX
-            design, and data science. I strongly believe in their mission and I am
-            constantly thankful to have them by my side, and to be involved.`,
+            design, and data science. I strongly believe in their mission and
+            their work. I am constantly thankful to have them by my side and 
+            to be involved.`,
     <>
       <span>My resume can be found by following </span>{" "}
       <a
