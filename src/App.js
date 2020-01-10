@@ -41,7 +41,7 @@ function App() {
     },
     {
       name: "Scribe",
-      code: "https://github.com/Breath-Taken/",
+      code: "https://github.com/scribe-notes",
       demo: "https://notaking-with-scribe.netlify.com/",
       image: scribe,
       early: true,
