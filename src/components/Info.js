@@ -10,10 +10,11 @@ const Info = () => {
   const contents = [
     `Before I became the full stack developer I am today, I began learning
             in Java about 8 years ago as a hobby, and eventually moved on
-            to game development with Unity and C#. I learned a lot and made
-            a lot, and I have now been a student at lambda school for 8 months
+            to game development with Unity and C#. I learned plenty and made
+            a lot. I have now been a student at Lambda School for 8 months
             building web apps as a full stack web developer in a professional
-            capacity.`,
+            capacity, and I am always looking forward to work with teams and in
+            environments where I can reach and expand my potential as an engineer.`,
     `I am currently enrolled in Lambda School (expected end date in March
             2020). Lambda School is a 6+ month Computer Science and Software
             Engineering Academy that provides an immersive hands-on curriculum
