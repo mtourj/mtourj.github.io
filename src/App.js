@@ -45,6 +45,7 @@ function App() {
       demo: "https://scribe-notes.netlify.com/",
       image: scribe,
       early: true,
+      tech: "React + Context API, NodeJS/Express, MongoDB + Mongoose",
       description:
         "Scribe is a digital note-taker. It allows a user to record transcripts by listening to their speech/meeting/conversation and storing it into their personal repository of transcripts"
     },
