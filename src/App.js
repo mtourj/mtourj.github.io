@@ -5,10 +5,6 @@ import Info from './components/Info';
 
 import SocialButton from './components/SocialButton';
 
-// import conjugator from './img/conjugator.png';
-// import scribe from './img/scribe.png';
-// import designhub from './img/designhub.png';
-
 // Icon imports
 import github from './img/icons/github.png';
 import githubLight from './img/icons/github-light.png';
@@ -87,7 +83,7 @@ function App() {
           <h1 className='subhead'>Software Developer</h1>
           <h4 className='subhead'>Eastvale, California</h4>
           <h4 className='subhead'>
-            React/Redux, NodeJS/Express, SQLite/PostgreSQL/MongoDB
+            React/React Native/Redux, NodeJS/Express, SQLite/PostgreSQL/MongoDB
           </h4>
         </div>
         <Info />

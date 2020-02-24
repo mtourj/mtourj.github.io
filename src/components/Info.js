@@ -22,18 +22,6 @@ const Info = () => {
             design, and data science. I strongly believe in their mission and
             their work. I am constantly thankful to have them by my side and 
             to be involved.`,
-    <>
-      <span>My resume can be found by following </span>{" "}
-      <a
-        className="resume-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://resume.creddle.io/resume/j5dsdq10hnm"
-      >
-        {" "}
-        this link! <span className="glyphicon glyphicon-new-window" />
-      </a>
-    </>,
     <Contact />
   ];
 
@@ -55,12 +43,6 @@ const Info = () => {
         <button
           onClick={() => setTab(2)}
           className={tab === 2 ? "selected" : ""}
-        >
-          RESUME
-        </button>
-        <button
-          onClick={() => setTab(3)}
-          className={tab === 3 ? "selected" : ""}
         >
           CONTACT
         </button>
