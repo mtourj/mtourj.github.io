@@ -18,17 +18,18 @@
     object-fit: cover;
     height: max-content;
     max-height: 480px;
+    max-width: 100%;
 
     .thumb {
       box-sizing: content-box;
       width: auto;
       width: 72%;
+      max-width: 100%;
       border-radius: 2px;
-      // box-shadow: 0 0 16px -1px black;
-      // max-height: 480px;
     }
 
     .mobile-thumb {
+      max-width: 100%;
       width: 27%;
       max-height: 480px;
     }
