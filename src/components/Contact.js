@@ -55,7 +55,7 @@ const Contact = () => {
       sending: true
     })
 
-    axios.post(process.env.REACT_APP_SEND_MAIL, {
+    axios.post(`${process.env.REACT_APP_BACKEND}/send`, {
       name,
       email,
       company,

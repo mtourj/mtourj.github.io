@@ -1,133 +1,113 @@
 .project {
   display: flex;
+  flex-direction: column;
   width: 90%;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
-
-  margin: 16px 0;
-  padding: 8px 0;
+  margin: 16px auto;
+  padding: 24px;
 
   transition: background-color 0.5s;
   transition-delay: 0.1s;
 
-  .thumb {
-    width: 20%;
-    padding: 8px;
-    margin: 0 16px;
-    object-fit: cover;
-
-    img {
-      width: 100%;
-      border-radius: 2px;
-      box-shadow: 0 0 16px -1px black;
-    }
-  }
-  .right {
+  .images {
     display: flex;
-    width: 80%;
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-      width: 80%;
-      height: 80%;
-      padding-right: 24px;
-
-      .warn {
-        padding: 6px;
-        background: rgba(220, 20, 60, 0.56);
-        border-radius: 6px;
-        width: auto;
-        margin-left: 8px;
-        font-size: 14px;
-      }
-
-      h3 {
-        margin: 0;
-      }
-
-      h5 {
-        margin: 6px 0;
-        color: lightslategray;
-      }
-
-      p {
-        margin-top: 8px;
-      }
-    }
-
-    .cta {
-      width: 20%;
-      height: 80%;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      button {
-        margin: 8px 0;
-        padding: 8px;
-        margin-right: 16px;
-        background: none;
-        border: 1px solid white;
-        border-radius: 4px;
-        color: white;
-        font-weight: bolder;
-        cursor: pointer;
-        outline: none;
-
-        box-shadow: none;
-
-        transition: background 0.25s, box-shadow 0.2s;
-
-        .glyphicon {
-          color: lightgray;
-        }
-      }
-
-      button:hover {
-        background: white;
-        color: black;
-        box-shadow: 0 0 16px -2px black;
-
-        .glyphicon {
-          color: gray;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 760px) {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    object-fit: cover;
+    height: max-content;
+    max-height: 480px;
 
     .thumb {
-      width: 95%;
+      box-sizing: content-box;
+      width: auto;
+      width: 72%;
+      border-radius: 2px;
+      // box-shadow: 0 0 16px -1px black;
+      // max-height: 480px;
     }
 
-    .right {
-      flex-direction: column;
-      width: 90%;
-      .content {
-        width: 100%;
+    .mobile-thumb {
+      width: 27%;
+      max-height: 480px;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 24px;
 
+    .warn {
+      padding: 6px;
+      background: rgba(220, 20, 60, 0.56);
+      border-radius: 6px;
+      width: auto;
+      margin-left: 8px;
+      font-size: 14px;
+    }
 
+    h3 {
+      margin: 0;
+    }
+
+    h5 {
+      margin: 6px 0;
+      color: lightslategray;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  .cta {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+      margin: 8px 0;
+      padding: 8px;
+      margin-right: 16px;
+      background: none;
+      border: 1px solid white;
+      border-radius: 4px;
+      color: white;
+      font-weight: bolder;
+      cursor: pointer;
+      outline: none;
+
+      box-shadow: none;
+
+      transition: background 0.25s, box-shadow 0.2s;
+
+      .glyphicon {
+        color: lightgray;
       }
+    }
 
-      .cta {
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        
-        button {
-          margin: 0 6px;
-          width: 50%;
-        }
+    button:hover {
+      background: white;
+      color: black;
+      box-shadow: 0 0 16px -2px black;
+
+      .glyphicon {
+        color: gray;
       }
     }
   }
-}
 
-.project:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  @media (min-width: 760px) {
+    .cta {
+      flex-direction: row;
+
+      button {
+        width: 50%;
+      }
+    }
+  }
 }
