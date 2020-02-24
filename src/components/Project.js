@@ -13,7 +13,11 @@ const Project = ({ data }) => {
         {data.thumbnail && (
           <img
             className='thumb'
-            style={!data.mobile_thumbnail ? { width: 'auto', maxHeight: 480, margin: 'auto' } : null}
+            style={
+              !data.mobile_thumbnail
+                ? { width: 'auto', maxHeight: 480, margin: 'auto' }
+                : null
+            }
             src={data.gif || data.thumbnail}
             alt={data.name}
           />
@@ -21,9 +25,7 @@ const Project = ({ data }) => {
         {data.mobile_thumbnail && (
           <img
             className='mobile-thumb'
-            style={
-              !data.thumbnail ? { width: null, maxHeight: '480px' } : null
-            }
+            style={!data.thumbnail ? { width: null, maxHeight: '480px' } : null}
             src={data.mobile_gif || data.mobile_thumbnail}
             alt={data.name}
           />
@@ -39,8 +41,17 @@ const Project = ({ data }) => {
         <p className='project-desc'>{data.description}</p>
       </div>
       <div className='cta'>
-        <button onClick={() => href(data.demo)}>
-          View Demo <span className='glyphicon glyphicon-new-window' />
+        <button
+          className={data.demo ? '' : 'disabled'}
+          onClick={() => href(data.demo)}
+        >
+          {data.demo ? (
+            <>
+              View Demo <span className='glyphicon glyphicon-new-window' />
+            </>
+          ) : (
+            <>Demo unavailable</>
+          )}
         </button>
         <button onClick={() => href(data.code)}>
           View Code <span className='glyphicon glyphicon-new-window' />
