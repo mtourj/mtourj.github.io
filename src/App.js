@@ -106,7 +106,7 @@ function App() {
         ) : state.loading ? (
           <div className='loading'>
             Loading...
-            <p className={`taking-too-long ${state.loadingTakingLong && 'shown'}`}>This is taking a while... my server probably is probably just waking up</p>
+            <p className={`taking-too-long ${state.loadingTakingLong && 'shown'}`}>This is taking a while... my server is probably just waking up</p>
           </div>
         ) : (
           <p className='error'>{state.error}</p>
