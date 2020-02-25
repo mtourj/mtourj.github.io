@@ -11,6 +11,8 @@ import githubLight from './img/icons/github-light.png';
 import linkedin from './img/icons/linkedin.png';
 import linkedinLight from './img/icons/linkedin-light.png';
 
+import avatar from './img/avatar.png';
+
 import './App.scss';
 import Axios from 'axios';
 
@@ -30,13 +32,13 @@ function App() {
       error: null
     });
     setTimeout(() => {
-      if(state.loading) {
+      if (state.loading) {
         setState(prevState => ({
           ...prevState,
           loadingTakingLong: true
-        }))
+        }));
       }
-    }, 3000)
+    }, 3000);
     Axios.get(`${process.env.REACT_APP_BACKEND}/projects`, {
       headers: { apiKey: process.env.REACT_APP_API_KEY }
     })
@@ -67,6 +69,9 @@ function App() {
         <hr className='horizontal-line' />
 
         <h1 className='head'>MOHAMMAD TOURJOMAN</h1>
+
+        <img className='avatar' src={avatar} alt='Avatar' />
+
         <div className='links'>
           <SocialButton
             to='https://github.com/mtourj'
@@ -102,7 +107,12 @@ function App() {
         ) : state.loading ? (
           <div className='loading'>
             Loading...
-            <p className={`taking-too-long ${state.loadingTakingLong && 'shown'}`}>This is taking a while... my server is probably just waking up</p>
+            <p
+              className={`taking-too-long ${state.loadingTakingLong &&
+                'shown'}`}
+            >
+              This is taking a while... my server is probably just waking up
+            </p>
           </div>
         ) : (
           <p className='error'>{state.error}</p>

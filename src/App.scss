@@ -28,6 +28,10 @@
       display: flex;
     }
 
+    .avatar {
+      max-height: 15%;
+      border-radius: 50%;
+    }
     .subhead {
       color: lightgray;
       margin-top: 0;
