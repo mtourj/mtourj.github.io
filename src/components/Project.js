@@ -53,7 +53,7 @@ const Project = ({ data }) => {
             <>Demo unavailable</>
           )}
         </button>
-        <button onClick={() => href(data.code)}>
+        <button onClick={() => href(data.github)}>
           View Code <span className='glyphicon glyphicon-new-window' />
         </button>
       </div>
