@@ -5,7 +5,7 @@
   font-family: 'Consolas', sans-serif;
   user-select: none;
   text-align: center;
-  min-height: 798px;
+  flex-direction: column;
 
   .head {
     margin-top: 48px;
@@ -15,9 +15,8 @@
 
   .container-left {
     background: black;
-    width: 50%;
-    min-height: 798px;
-    height: 100vh;
+    min-height: 100vh;
+    // height: 100vh;
 
     display: flex;
     justify-content: space-between;
@@ -29,7 +28,10 @@
     }
 
     .avatar {
-      max-height: 15%;
+      min-width: 100px;
+      width: 12%;
+      max-width: 400px;
+      margin-bottom: 16px;
       border-radius: 50%;
     }
     .subhead {
@@ -44,16 +46,12 @@
 
   .container-right {
     background: #333333;
-    width: 50%;
-    height: 100vh;
-    min-height: 798px;
+    min-height: 100vh;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
-    overflow-y: scroll;
 
     .loading {
       margin: auto;
@@ -85,14 +83,9 @@
   }
 
   @media (max-width: 1300px) {
-    flex-direction: column;
-    min-height: none;
 
     .container-left,
     .container-right {
-      min-height: 0;
-      width: 100%;
-      overflow-y: hidden;
 
       .head {
         font-size: 32px;
