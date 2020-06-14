@@ -7,7 +7,7 @@
   margin: 16px auto;
   padding: 24px;
 
-  background-color: rgb(58, 93, 128);
+  background-color: rgb(36, 111, 187);
   border-radius: 12px;
 
   transition: background-color 0.5s;
@@ -52,17 +52,18 @@
       font-size: 14px;
     }
 
-    h3 {
+    h2 {
       margin: 0;
     }
 
-    h5 {
+    h4 {
       margin: 6px 0;
-      color: lightslategray;
+      color: rgb(235, 224, 74);
     }
 
     p {
       margin-top: 8px;
+      font-size: 15px;
     }
   }
 
@@ -91,8 +92,8 @@
 
       &.disabled {
         pointer-events: none;
-        background-color: rgb(32, 54, 77);
-        color: rgb(175, 175, 175);
+        background-color: rgb(27, 67, 110);
+        color: rgb(143, 143, 143);
       }
 
       .glyphicon {
@@ -101,13 +102,8 @@
     }
 
     button:hover {
-      background: rgb(229, 234, 240);
-      color: black;
+      background: rgb(98, 169, 255);
       box-shadow: 0 0 7px -2px black;
-
-      .glyphicon {
-        color: gray;
-      }
     }
   }
 
