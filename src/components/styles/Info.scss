@@ -2,109 +2,32 @@
   margin-top: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 85%;
   max-width: 1200px;
+  text-align: left;
+  
+  padding-bottom: 80px;
 
-  @media (max-width: 400px) {
-    margin-top: 8px;
+  transition: all 0.1s ease-in-out;
+
+  @media (max-width: 920px) {
+    width: 95%;
   }
 
-  .nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    margin-bottom: 0px;
-
-    button {
-      flex-grow: 100;
-      background: none;
-      border: 1px solid white;
-      color: rgb(200, 200, 200);
-      padding: 12px 32px;
-      margin-bottom: 0;
-
-      outline: none;
-      font-weight: lighter;
-      letter-spacing: 3px;
-
-      transition: border-bottom 0.2s, padding 0.2s, color 0.2s;
-    }
-
-    button:hover {
-      color: rgb(240, 240, 240);
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-    }
-
-    button:first-child {
-      border-radius: 8px 0px 0px 0px;
-    }
-
-    button:last-child {
-      border-radius: 0 8px 0 0;
-    }
-
-    button.selected {
-      color: white;
-      border-bottom: 1px solid rgba(255, 255, 255, 0);
-    }
-
-    
-    @media (max-width: 670px) {
-      flex-flow: row wrap;
-
-      button {
-        padding: 8px;
-
-      }
-    }
-
-    @media (max-width: 440px) {
-      button {
-        &:last-child {
-          border-radius: 0;
-        }
-
-        &:nth-child(3) {
-          border-radius: 0 8px 0 0;
-        }
-      }
-    }
-
-    @media(max-width: 350px) {
-      button {
-        padding: 4px;
-      }
-    }
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
   }
 
-  .tab {
-    display: flex;
-    align-items: center;
-    min-height: 180px;
-    height: max-content;
-    text-align: left;
-    line-height: 1.6;
-    padding: 16px;
-    padding-top: 8px;
-    border: 1px dashed white;
-    border-top: none;
-    margin-bottom: 24px;
-    border-radius: 0 0 8px 8px;
-    margin-top: 0;
-    
-    transition: all 0.1s ease-in-out;
+  p {
+    font-size: 20px;
+    text-indent: 24px;
+  }
 
-    @media(max-width: 1640px) {
-      height: auto;
-    }
-
-    @media(max-width: 420px) {
-      font-size: 12px;
-    }
-
-    .resume-link {
-      margin-left: 8px;
-    }
+  .arrow-down {
+    text-align: center;
+    bottom: 0;
+    font-size: 56px;
   }
 }

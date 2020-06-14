@@ -2,7 +2,6 @@ form {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.562);
   width: 100%;
   align-items: center;
 
@@ -38,11 +37,12 @@ form {
   }
 
   button {
-    background-color: black;
+    background-color: dodgerblue;
     z-index: 1;
     
     margin: 8px 0;
     padding: 8px;
+    // border: none;
     border: 1px solid white;
     border-radius: 4px;
     color: white;
@@ -62,8 +62,7 @@ form {
   }
 
   button:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 16px -2px black;
+    background-color: rgb(66, 161, 255);
+    box-shadow: 0 0 4px -2px black;
   }
 }

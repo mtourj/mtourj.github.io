@@ -7,7 +7,7 @@
   margin: 16px auto;
   padding: 24px;
 
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(58, 93, 128);
   border-radius: 12px;
 
   transition: background-color 0.5s;
@@ -91,7 +91,7 @@
 
       &.disabled {
         pointer-events: none;
-        background-color: rgb(37, 37, 37);
+        background-color: rgb(32, 54, 77);
         color: rgb(175, 175, 175);
       }
 
@@ -101,9 +101,9 @@
     }
 
     button:hover {
-      background: white;
+      background: rgb(229, 234, 240);
       color: black;
-      box-shadow: 0 0 16px -2px black;
+      box-shadow: 0 0 7px -2px black;
 
       .glyphicon {
         color: gray;
