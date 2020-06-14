@@ -21,7 +21,7 @@ function App() {
     projects: null,
     loading: true,
     loadingTakingLong: false,
-    error: null
+    error: null,
   });
 
   const init = () => {
@@ -29,34 +29,34 @@ function App() {
     setState({
       ...state,
       loading: true,
-      error: null
+      error: null,
     });
     setTimeout(() => {
       if (state.loading) {
-        setState(prevState => ({
+        setState((prevState) => ({
           ...prevState,
-          loadingTakingLong: true
+          loadingTakingLong: true,
         }));
       }
     }, 3000);
     Axios.get(`${process.env.REACT_APP_BACKEND}/projects`, {
-      headers: { apiKey: process.env.REACT_APP_API_KEY }
+      headers: { apiKey: process.env.REACT_APP_API_KEY },
     })
-      .then(res => {
+      .then((res) => {
         const projects = res.data.sort((a, b) => b.order - a.order);
 
         setState({
           ...state,
           projects,
-          loading: false
+          loading: false,
         });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         setState({
           ...state,
           loading: false,
-          error: 'Failed to get projects! :( Refreshing the page might help'
+          error: 'Failed to get projects! :( Refreshing the page might help',
         });
       });
   };
@@ -65,41 +65,43 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='container-left'>
-        <hr className='horizontal-line' />
-
-        <h1 className='head'>MOHAMMAD TOURJOMAN</h1>
-
-        <img className='avatar' src={avatar} alt='Avatar' />
-
-        <div className='links'>
-          <SocialButton
-            to='https://github.com/mtourj'
-            default={githubLight}
-            hover={github}
-          />
-          <SocialButton
-            to='https://www.linkedin.com/in/mohammad-tourjoman-6b811259/'
-            default={linkedinLight}
-            hover={linkedin}
-          />
+      <div className='container-top'>
+        <div className='nameplate'>
+          <div className='nameplate-image'>
+            <img className='avatar' src={avatar} alt='Avatar' />
+            <div className='links'>
+              <SocialButton
+                to='https://github.com/mtourj'
+                default={github}
+                // hover={githubLight}
+              />
+              <SocialButton
+                to='https://www.linkedin.com/in/mohammad-tourjoman-6b811259/'
+                default={linkedin}
+                // hover={linkedinLight}
+              />
+            </div>
+          </div>
+          <div className='nameplate-text'>
+            <p className='head'>MOHAMMAD TOURJOMAN</p>
+            <div className='subheads'>
+              <h1 className='subhead'>Software Developer</h1>
+              <h4 className='subhead'>Eastvale, California</h4>
+              <h4 className='subhead'>
+                React ● React Native ● Redux ● Express ● PostgreSQL ● MongoDB
+              </h4>
+            </div>
+          </div>
         </div>
-        <div className='subheads'>
-          <h1 className='subhead'>Software Developer</h1>
-          <h4 className='subhead'>Eastvale, California</h4>
-          <h4 className='subhead'>
-            React/React Native/Redux, NodeJS/Express, SQLite/PostgreSQL/MongoDB
-          </h4>
-        </div>
+
         <Info />
-        <hr className='horizontal-line' />
         <div className='arrow-down'>&#8595;</div>
       </div>
-      <div className='container-right'>
+      <div className='container-bottom'>
         <h1 className='head'>MOST RECENT PROJECTS</h1>
         {state.projects ? (
           <div>
-            {state.projects.map(project => (
+            {state.projects.map((project) => (
               <Project key={project.name} data={project} />
             ))}
             <span>More to come...</span>
@@ -108,8 +110,9 @@ function App() {
           <div className='loading'>
             Loading...
             <p
-              className={`taking-too-long ${state.loadingTakingLong &&
-                'shown'}`}
+              className={`taking-too-long ${
+                state.loadingTakingLong && 'shown'
+              }`}
             >
               This is taking a while... my server is probably just waking up
             </p>

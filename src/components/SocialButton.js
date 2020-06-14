@@ -7,7 +7,7 @@ const SocialButton = props => {
 
   return (
     <a href={props.to} target="_blank" rel="noopener noreferrer">
-    <img alt='' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} src={hover ? props.hover : props.default} className='link' />
+    <img alt='' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} src={hover ? props.hover || props.default : props.default} className='link' />
     </a>
   );
 };

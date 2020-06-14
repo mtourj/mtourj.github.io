@@ -32,12 +32,12 @@ const Project = ({ data }) => {
         )}
       </div>
       <div className='content'>
-        <h3 className='project-head'>
+        <h2 className='project-head'>
           {data.name}
           {data.early && <span className='warn'>EARLY</span>}
-        </h3>
+        </h2>
 
-        <h5 className='project-subhead'>{data.tech}</h5>
+        <h4 className='project-subhead'>{data.tech}</h4>
         <p className='project-desc'>{data.description}</p>
       </div>
       <div className='cta'>

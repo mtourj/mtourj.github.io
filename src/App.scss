@@ -1,7 +1,7 @@
 .App {
   display: flex;
   width: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Consolas', sans-serif;
   user-select: none;
   text-align: center;
@@ -13,39 +13,116 @@
     padding: 16px;
   }
 
-  .container-left {
-    background: black;
+  .container-top {
+    background: dodgerblue;
     min-height: 100vh;
-    // height: 100vh;
+    position: relative;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    .links {
+    .nameplate {
+      
+      background-color: rgb(255, 255, 255);
+      color: black;
+      border: 1px solid white;
+      border-radius: 12px;
+      padding: 24px;
       display: flex;
-    }
+      align-items: center;
+      margin: 24px;
+      border: 1px solid lightgray;
+      justify-content: center;
 
-    .avatar {
-      min-width: 100px;
-      width: 12%;
-      max-width: 400px;
-      margin-bottom: 16px;
-      border-radius: 50%;
-    }
-    .subhead {
-      color: lightgray;
-      margin-top: 0;
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+
+      .nameplate-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 32px;
+
+        .avatar {
+          width: 128px;
+          margin-bottom: 16px;
+          border-radius: 50%;
+        }
+
+        .links {
+          display: flex;
+        }
+      }
+
+      .nameplate-text {
+        .head {
+          margin: 0;
+          font-size: 48px;
+          padding: 0px;
+          font-weight: bold;
+
+          transition: all 0.1s ease-in-out;
+        }
+        .subhead {
+          color: black;
+          margin-top: 0;
+        }
+      }
+      @media (max-width: 920px) {
+        .nameplate-image {
+          .avatar {
+            width: 112px;
+          }
+        }
+
+        .nameplate-text {
+          .head {
+            font-size: 40px;
+          }
+
+          .subhead {
+            font-size: 20px;
+          }
+
+          h1.subhead {
+            font-size: 24px;
+          }
+        }
+      }
+
+      @media (max-width: 720px) {
+        .nameplate-image {
+          .avatar {
+            width: 88px;
+          }
+        }
+
+        .nameplate-text {
+          .head {
+            font-size: 32px;
+          }
+
+          .subhead {
+            font-size: 17px;
+          }
+        }
+      }
     }
 
     .arrow-down {
-      display: none;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      font-size: 56px;
     }
   }
 
-  .container-right {
-    background: #333333;
+  .container-bottom {
+    background: rgb(31, 77, 122);
     min-height: 100vh;
 
     display: flex;
@@ -77,16 +154,9 @@
     }
   }
 
-  .horizontal-line {
-    color: white;
-    width: 90%;
-  }
-
   @media (max-width: 1300px) {
-
-    .container-left,
-    .container-right {
-
+    .container-top,
+    .container-bottom {
       .head {
         font-size: 32px;
       }
@@ -95,42 +165,14 @@
         font-size: 24px;
       }
 
-      h4.subhead {
-        font-size: 16px;
-      }
-
       hr {
         display: none;
       }
     }
 
-    .container-left {
-      // padding-bottom: 144px;
-
-      .arrow-down {
-        display: flex;
-        color: white;
-        text-align: center;
-        font-size: 48px;
-        // color: white;
-        // position: absolute;
-        // font-size: 48px;
-        // bottom: 12px;
-        // margin: auto;
-        // left: 50%;
-        // margin-left: -13px;
-      }
-    }
-
-    .container-right {
+    .container-bottom {
       height: auto;
       padding-bottom: 48px;
-    }
-
-    @media (max-width: 360px) {
-      .arrow-down {
-        display: none;
-      }
     }
   }
 
