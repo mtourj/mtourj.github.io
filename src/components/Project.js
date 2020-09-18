@@ -3,7 +3,7 @@ import React from 'react';
 import './styles/Project.scss';
 
 const Project = ({ data }) => {
-  const href = link => {
+  const href = (link) => {
     window.open(link, '_blank');
   };
 
@@ -53,8 +53,17 @@ const Project = ({ data }) => {
             <>Demo unavailable</>
           )}
         </button>
-        <button onClick={() => href(data.github)}>
-          View Code <span className='glyphicon glyphicon-new-window' />
+        <button
+          className={data.github ? '' : 'disabled'}
+          onClick={() => href(data.github)}
+        >
+          {data.github ? (
+            <>
+              View Code <span className='glyphicon glyphicon-new-window' />
+            </>
+          ) : (
+            <>Code private</>
+          )}
         </button>
       </div>
     </div>

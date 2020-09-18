@@ -7,9 +7,7 @@ import SocialButton from './components/SocialButton';
 
 // Icon imports
 import github from './img/icons/github.png';
-import githubLight from './img/icons/github-light.png';
 import linkedin from './img/icons/linkedin.png';
-import linkedinLight from './img/icons/linkedin-light.png';
 
 import avatar from './img/avatar.png';
 
@@ -38,7 +36,7 @@ function App() {
           loadingTakingLong: true,
         }));
       }
-    }, 3000);
+    }, 3500);
     Axios.get(`${process.env.REACT_APP_BACKEND}/projects`, {
       headers: { apiKey: process.env.REACT_APP_API_KEY },
     })
@@ -76,7 +74,7 @@ function App() {
                 // hover={githubLight}
               />
               <SocialButton
-                to='https://www.linkedin.com/in/mohammad-tourjoman-6b811259/'
+                to='https://www.linkedin.com/in/mohammadtourjoman/'
                 default={linkedin}
                 // hover={linkedinLight}
               />
@@ -104,7 +102,6 @@ function App() {
             {state.projects.map((project) => (
               <Project key={project.name} data={project} />
             ))}
-            <span>More to come...</span>
           </div>
         ) : state.loading ? (
           <div className='loading'>
