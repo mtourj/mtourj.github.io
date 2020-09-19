@@ -65,6 +65,13 @@ const Project = ({ data }) => {
             <>Code private</>
           )}
         </button>
+        {data.case_study && (
+          <button
+            onClick={() => href(data.case_study)}
+          >
+            View Case Study <span className='glyphicon glyphicon-new-window' />
+          </button>
+        )}
       </div>
     </div>
   );
