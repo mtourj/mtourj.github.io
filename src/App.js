@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import Project from './components/Project';
-import Info from './components/Info';
+import Project from "./components/Project";
+import Info from "./components/Info";
 
-import SocialButton from './components/SocialButton';
+import SocialButton from "./components/SocialButton";
 
 // Icon imports
-import github from './img/icons/github.png';
-import linkedin from './img/icons/linkedin.png';
+import github from "./img/icons/github.png";
+import linkedin from "./img/icons/linkedin.png";
 
-import avatar from './img/avatar.png';
+import avatar from "./img/avatar.png";
 
-import './App.scss';
-import Axios from 'axios';
+import "./App.scss";
+import Axios from "axios";
 
 function App() {
   const [state, setState] = useState({
@@ -37,9 +37,7 @@ function App() {
         }));
       }
     }, 3500);
-    Axios.get(`${process.env.REACT_APP_BACKEND}/projects`, {
-      headers: { apiKey: process.env.REACT_APP_API_KEY },
-    })
+    Axios.get(`${process.env.REACT_APP_BACKEND}/projects`)
       .then((res) => {
         const projects = res.data.sort((a, b) => b.order - a.order);
 
@@ -54,7 +52,7 @@ function App() {
         setState({
           ...state,
           loading: false,
-          error: 'Failed to get projects! :( Refreshing the page might help',
+          error: "Failed to get projects! :( Refreshing the page might help",
         });
       });
   };
@@ -62,30 +60,30 @@ function App() {
   useEffect(init, []);
 
   return (
-    <div className='App'>
-      <div className='container-top'>
-        <div className='nameplate'>
-          <div className='nameplate-image'>
-            <img className='avatar' src={avatar} alt='Avatar' />
-            <div className='links'>
+    <div className="App">
+      <div className="container-top">
+        <div className="nameplate">
+          <div className="nameplate-image">
+            <img className="avatar" src={avatar} alt="Avatar" />
+            <div className="links">
               <SocialButton
-                to='https://github.com/mtourj'
+                to="https://github.com/mtourj"
                 default={github}
                 // hover={githubLight}
               />
               <SocialButton
-                to='https://www.linkedin.com/in/mohammadtourjoman/'
+                to="https://www.linkedin.com/in/mohammadtourjoman/"
                 default={linkedin}
                 // hover={linkedinLight}
               />
             </div>
           </div>
-          <div className='nameplate-text'>
-            <p className='head'>MOHAMMAD TOURJOMAN</p>
-            <div className='subheads'>
-              <h1 className='subhead'>Software Developer</h1>
-              <h4 className='subhead'>Eastvale, California</h4>
-              <h4 className='subhead'>
+          <div className="nameplate-text">
+            <p className="head">MOHAMMAD TOURJOMAN</p>
+            <div className="subheads">
+              <h1 className="subhead">Software Developer</h1>
+              <h4 className="subhead">Eastvale, California</h4>
+              <h4 className="subhead">
                 React ● React Native ● Redux ● Express ● PostgreSQL ● MongoDB
               </h4>
             </div>
@@ -93,10 +91,10 @@ function App() {
         </div>
 
         <Info />
-        <div className='arrow-down'>&#8595;</div>
+        <div className="arrow-down">&#8595;</div>
       </div>
-      <div className='container-bottom'>
-        <h1 className='head'>MOST RECENT PROJECTS</h1>
+      <div className="container-bottom">
+        <h1 className="head">MOST RECENT PROJECTS</h1>
         {state.projects ? (
           <div>
             {state.projects.map((project) => (
@@ -104,18 +102,18 @@ function App() {
             ))}
           </div>
         ) : state.loading ? (
-          <div className='loading'>
+          <div className="loading">
             Loading...
             <p
               className={`taking-too-long ${
-                state.loadingTakingLong && 'shown'
+                state.loadingTakingLong && "shown"
               }`}
             >
               This is taking a while... my server is probably just waking up
             </p>
           </div>
         ) : (
-          <p className='error'>{state.error}</p>
+          <p className="error">{state.error}</p>
         )}
       </div>
     </div>
